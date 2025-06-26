@@ -1,54 +1,54 @@
-# ChromaX - Outil Réseau
+# 🚀 ChromaX - Outil Réseau
+ChromaX est une application réseau intuitive en Python avec interface graphique sombre, conçue pour vous offrir un ensemble complet d’outils réseau dans une seule application légère.
 
+✨ Fonctionnalités principales
+🔹 Afficher l’adresse IP locale et publique
 
-ChromaX est une application Python avec interface graphique pour réaliser diverses opérations réseau : affichage des IP locale et publique, test de vitesse internet, ping, scan des ports locaux, et génération d’un rapport réseau complet. Le rapport est généré dans un fichier texte, ouvert automatiquement, puis supprimé après consultation.
+🔹 Test de vitesse Internet (Speedtest) avec gestion de timeout
 
-Fonctionnalités
-Afficher IP locale et IP publique
+🔹 Ping Google (8.8.8.8) ou toute adresse personnalisée via popup
 
-Lancer un speedtest internet (avec timeout)
+🔹 Scan des ports locaux (20-1024) en multi-threading pour rapidité
 
-Ping Google (8.8.8.8) ou une adresse personnalisée
+🔹 Génération d’un rapport réseau complet dans un fichier texte
 
-Scanner les ports locaux ouverts (20-1024)
+Le rapport s’ouvre automatiquement dans votre éditeur par défaut et est supprimé dès sa fermeture pour plus de confidentialité.
 
-Générer un rapport réseau complet dans un fichier texte
-Le fichier s’ouvre automatiquement dans l’éditeur par défaut et est supprimé après fermeture.
-
-Prérequis
+⚙️ Prérequis
 Python 3.x
 
-Modules Python à installer :
+Modules Python nécessaires :
 
 bash
 Copier
 Modifier
 pip install requests speedtest-cli
-Utilisation
+🚀 Installation et lancement
 Clonez ce dépôt ou téléchargez le fichier main.py.
 
-Installez les dépendances avec pip.
+Installez les dépendances via pip (voir ci-dessus).
 
-Lancez l’application :
+Lancez l’application avec :
 
 bash
 Copier
 Modifier
 python main.py
-Utilisez l’interface graphique pour lancer les actions réseau souhaitées.
+Utilisez l’interface graphique pour accéder aux fonctionnalités réseau.
 
-Pour le rapport réseau, un fichier texte s’ouvrira automatiquement, il sera supprimé une fois fermé.
+🖥️ Compatibilité multi-plateforme
+Windows : utilise Notepad pour afficher le rapport.
 
-Plateformes supportées
-Windows (Notepad est utilisé pour afficher le rapport)
+macOS : utilise TextEdit.
 
-macOS (TextEdit est utilisé)
+Linux : utilise xdg-open (le fichier est supprimé après un délai).
 
-Linux (xdg-open est utilisé, suppression automatique après un délai)
+🔧 Détails techniques
+Le scan de ports exploite le multi-threading pour un scan efficace.
 
-Notes
-Le scan de ports couvre les ports de 20 à 1024.
+Le speedtest est exécuté dans un thread avec timeout pour éviter de bloquer l’interface.
 
-Le speedtest peut prendre jusqu’à 30 secondes.
+La fenêtre de ping personnalisé propose un champ pour saisir l’adresse cible.
 
-Le ping personnalisé ouvre une petite fenêtre pour saisir une adresse IP ou un domaine.
+La couleur de l’interface est sombre, pour un confort visuel prolongé.
+
