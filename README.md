@@ -23,6 +23,7 @@ bash
 Copier
 Modifier
 pip install requests speedtest-cli
+
 🚀 Installation et lancement
 Clonez ce dépôt ou téléchargez le fichier main.py.
 
