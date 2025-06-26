@@ -1,55 +1,56 @@
-# 🚀 ChromaX - Outil Réseau
-ChromaX est une application réseau intuitive en Python avec interface graphique sombre, conçue pour vous offrir un ensemble complet d’outils réseau dans une seule application légère.
+ChromaX
+Suite d’Outils Réseau en Python
 
-✨ Fonctionnalités principales
-🔹 Afficher l’adresse IP locale et publique
+Une application légère et complète pour le diagnostic et la surveillance réseau, avec interface graphique sombre.
 
-🔹 Test de vitesse Internet (Speedtest) avec gestion de timeout
+Fonctionnalités
+🔍 Diagnostic réseau complet
 
-🔹 Ping Google (8.8.8.8) ou toute adresse personnalisée via popup
+📡 Analyse IP locale et publique
 
-🔹 Scan des ports locaux (20-1024) en multi-threading pour rapidité
+⚡ Test de vitesse Internet (Speedtest)
 
-🔹 Génération d’un rapport réseau complet dans un fichier texte
+🛠️ Ping vers Google ou adresse personnalisée
 
-Le rapport s’ouvre automatiquement dans votre éditeur par défaut et est supprimé dès sa fermeture pour plus de confidentialité.
+🔓 Scan multi-thread des ports locaux (20-1024)
 
-⚙️ Prérequis
-Python 3.x
+📄 Génération et consultation de rapports réseau temporaires
 
-Modules Python nécessaires :
+Contenu du projet
+Fichier	Description
+main.py	Point d’entrée et interface graphique (GUI)
+net_utils.py*	Fonctions utilitaires pour l’analyse réseau
+README.md	Documentation du projet
+
+* (Dans ce dépôt, tout est dans main.py mais peut être séparé pour modularité)
+
+Installation
+Cloner le dépôt :
+
+bash
+Copier
+Modifier
+git clone https://github.com/votre-utilisateur/chromax.git
+cd chromax
+Installer les dépendances :
 
 bash
 Copier
 Modifier
 pip install requests speedtest-cli
-
-🚀 Installation et lancement
-Clonez ce dépôt ou téléchargez le fichier main.py.
-
-Installez les dépendances via pip (voir ci-dessus).
-
-Lancez l’application avec :
+Lancer l’application :
 
 bash
 Copier
 Modifier
 python main.py
-Utilisez l’interface graphique pour accéder aux fonctionnalités réseau.
+Utilisation
+Lancez l’application GUI.
 
-🖥️ Compatibilité multi-plateforme
-Windows : utilise Notepad pour afficher le rapport.
+Cliquez sur les boutons pour effectuer des tests réseau.
 
-macOS : utilise TextEdit.
+Le rapport réseau s’ouvre automatiquement après génération et est supprimé après consultation pour garantir votre confidentialité.
 
-Linux : utilise xdg-open (le fichier est supprimé après un délai).
-
-🔧 Détails techniques
-Le scan de ports exploite le multi-threading pour un scan efficace.
-
-Le speedtest est exécuté dans un thread avec timeout pour éviter de bloquer l’interface.
-
-La fenêtre de ping personnalisé propose un champ pour saisir l’adresse cible.
-
-La couleur de l’interface est sombre, pour un confort visuel prolongé.
+Compatibilité
+Fonctionne sous Windows, macOS, et Linux avec détection automatique du système.
 
